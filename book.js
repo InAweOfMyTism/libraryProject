@@ -19,6 +19,10 @@ function Book(title, author, genre, wordCount) {
         this.read = false;
     };
     this.info = function () {
-        console.log(this);
+        if (this.read === true)
+            return `${title}, by ${author}, ${wordCount} words, finished`;
+        else 
+            return `${title}, by ${author}, ${wordCount} words, unread`;
+            
     }
 }
