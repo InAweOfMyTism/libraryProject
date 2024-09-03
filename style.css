@@ -1,0 +1,19 @@
+body{
+    background-color: antiquewhite;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    gap: 15px;
+}
+
+.book{
+    height: 100px;
+    width: 75px;
+    background-color: gray;
+    border-radius: 15px;
+}
