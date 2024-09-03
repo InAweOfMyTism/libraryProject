@@ -1,10 +1,4 @@
-const book = {
-    title: '',
-    author: '',
-    genre: '',
-    length: '',
-    read: false
-}
+const myLibrary = [];
 
 function Book(title, author, genre, wordCount) {
     this.title = title;
@@ -25,4 +19,8 @@ function Book(title, author, genre, wordCount) {
             return `${title}, by ${author}, ${wordCount} words, unread`;
             
     }
+}
+
+function addBookToLibrary(title, author, genre, wordCount) {
+    myLibrary.push(new Book(title, author, genre, wordCount));
 }
